@@ -31,3 +31,21 @@
 	text-align: right;
 	padding: 5px
 }
+.body {
+	background-image: url("laptop.jpg");
+	background-size: cover;
+}
+
+.gstyle {
+	border: 5px solid #545454;
+	width: 200px;
+	float: left;
+	margin: 5px;
+	border-radius: 20px;
+	
+}
+.pstyle {
+	text-align: center;
+	color: yellow;
+	
+}
