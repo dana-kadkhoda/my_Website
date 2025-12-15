@@ -47,7 +47,7 @@
 
 
 .body {
-	background-image: url("laptop.jpg");
+	background-image: url("laptop.png");
 	background-size: cover;
 }
 
@@ -155,4 +155,5 @@ li ul li a:hover {
 	background-color: #858585;
 	float: left;
 }
+
 
