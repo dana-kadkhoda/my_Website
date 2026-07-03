@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/icon.jpg">
+    <link rel="stylesheet" href="../static/login-styles.css">
+    <title>login</title>
+</head>
+<body>
+
+
+    <main>
+        <div class="error-div">
+            <h3 class="title-error-div">Help</h3>
+            <p class="paragraph-error">{{ error }}</p>
+        </div>
+    
+        <form method="post" action="">
+    
+            <div>
+                <h1 class="title">Sign up</h1>
+    
+            <div>
+                <label for="username">UserName :</label>
+                <input type="text" name="username" id="username" required placeholder="your username ..." autocomplete="off">
+            </div>
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" required placeholder="your password ..." autocomplete="off">
+            </div>
+            <div>
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email" required placeholder="email@gmail.com" autocomplete="off">
+            </div>
+    
+            <button type="submit" class="submit-btn">Sign up</button>
+            </div>
+
+            <a href="/login">I have an account</a>
+        </form>
+    </main>
+
+
+</body>
+</html>
