@@ -1,0 +1,659 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 1200px) {
+    .main #about-us .title-about-us::before,
+    .main #about-us .title-about-us::after,
+    .main #sample .title-sample::before,
+    .main #sample .title-sample::after,
+    .main #knowledge .title-knowledge::before,
+    .main #knowledge .title-knowledge::after {
+        content: "";
+        width: 35%;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    .main #about-us .parent-p-img {
+        display: block;
+        text-align: center;
+    }
+
+    .main #about-us .parent-p-img .paragraph-about-us {
+        width: 80%;
+        margin: 5rem auto;
+    }
+
+    .main #home .about-web .title-web {
+        font-size: 2.6rem;
+    }
+
+    .main #sample {
+        height: auto;
+    }
+    .main #home {
+        height: auto;
+    }
+    .main #about-us {
+        height: auto;
+    }
+    .main #knowledge {
+        height: auto;
+    }
+
+    .main #sample .sample-section .sample-article::after {
+        display: none;
+    }
+
+    .main #sample .sample-section {
+        display: block;
+    }
+
+    .main #sample .sample-section .sample-article img {
+        display: block;
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .main .knowledge .container-knowledge {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 786px) {
+    .main #about-us .title-about-us::before,
+    .main #about-us .title-about-us::after,
+    .main #sample .title-sample::before,
+    .main #sample .title-sample::after,
+    .main #knowledge .title-knowledge::before,
+    .main #knowledge .title-knowledge::after {
+        content: "";
+        width: 32%;
+    }
+
+    .main #knowledge .container {
+        display: block;
+        width: 26rem;
+        text-align: center;
+        margin: 3rem auto;
+    }
+
+    .main #knowledge .container-knowledge .label-knowledge {
+        margin-bottom: 1rem;
+    }
+
+    .main #knowledge .container-knowledge .navar-a,
+    .main #knowledge .container-knowledge .navar-b {
+        margin: auto;
+    }
+
+    .main #home {
+        height: 80dvh;
+    }
+}
+
+
+@media (max-width: 660px) {
+    .main #about-us .title-about-us::before,
+    .main #about-us .title-about-us::after,
+    .main #sample .title-sample::before,
+    .main #sample .title-sample::after,
+    .main #knowledge .title-knowledge::before,
+    .main #knowledge .title-knowledge::after {
+        content: "";
+        width: 28%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    .main #about-us .parent-p-img .dana-image {
+        width: 70%;
+    }
+
+    .main #home {
+        height: 60dvh;
+    }
+
+    .main #about-us {
+        height: auto;
+    }
+
+    
+    .main #knowledge {
+        height: auto;
+    }
+
+    .main #home .header .navbar .navbar-link {
+        font-size: 1.3rem;
+    }
+
+    .main #home .header .div-class {
+        padding: 1.2rem;
+    }
+
+    .main #home .header .div-class::after {
+        content: "";
+        display: none;
+    }
+
+    .main #home .header .div-class .text-title::after {
+        display: none;
+    }
+
+    .main #home .header .div-class .text-title::before {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 7.5px;
+    }
+
+    .main #home {
+        height: 50dvh;
+    }
+
+    .main #knowledge {
+        height: auto;
+    }
+
+    .main #home .header .navbar .navbar-link {
+        font-size: 1.4rem;
+    }
+
+    .main #home .header .div-class {
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 385px) {
+
+    .main #home .header .navbar .navbar-link {
+        font-size: 1.2rem;
+    }
+}
+
+
+.home {
+    height: 100dvh;
+    background-image: linear-gradient(225deg, rgb(29, 69, 69) , rgb(72, 27, 27));
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 3rem;
+    color: white;
+}
+
+.navbar {
+    margin-top: 1rem;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 3.1rem;
+}
+
+.navbar ul .navbar-link a {
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbar ul .navbar-link {
+    transition: all 0.2s;
+    position: relative;
+    padding-bottom: 0.3rem;
+}
+
+.navbar ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-image: radial-gradient(rgb(121, 71, 71),rgb(93, 93, 185));
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+.navbar ul .navbar-link:hover::after {
+    width: 100%;
+}
+
+.navbar ul .navbar-link a:hover {
+    color: rgb(149, 186, 202);
+}
+
+.div-class {
+    padding: 1rem;
+    position: relative;
+    transition: all 0.4s;
+    z-index: 10;
+}
+
+.main .home .header .text-title:hover::after {
+    bottom: 30px;
+    right: 40px;
+}
+
+.main .home .header .text-title:hover::before {
+    left: 40px;
+    top: 30px;
+}
+
+.text-title::after {
+    content: "";
+    background-image: linear-gradient(135deg, rgb(75, 81, 32) , rgb(144, 148, 64));
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    bottom: 40px;
+    right: 90px;
+    z-index: -10;
+    transition: all 0.4s;
+    animation: changecolor 4s infinite alternate;
+}
+
+.text-title::before {
+    content: "";
+    background-image: linear-gradient(135deg, rgb(75, 81, 32) , rgb(144, 148, 64));
+    position: absolute;
+    left: 90px;
+    top: 40px;
+    bottom: 11px;
+    right: 11px;
+    z-index: -10;
+    transition: all 0.4s;
+    animation: changecolor 4s infinite alternate;
+}
+
+.text-title {
+    font-size: 1.8rem;
+    background-image: radial-gradient(black,rgb(30, 41, 65));
+    padding: 0.5rem;
+}
+
+.about-web {
+    color: white;
+    padding: 8rem 3.5rem;
+}
+
+.title-web {
+    margin-bottom: 1.8rem;
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 20px rgb(0,0,0);
+}
+
+.about-dana {
+    margin-bottom: 2.5rem;
+    color: rgb(120, 120, 120);
+}
+
+.see-example-link {
+    background-image: linear-gradient(135deg,rgb(119, 159, 194),rgb(147, 102, 147));
+    padding: 0.9rem 1.5rem;
+    border-radius: 1.2rem 0;
+    margin-top: 2rem;
+    border: 2px solid rgb(80, 106, 157);
+    animation: changecolor 4s infinite alternate;
+    transition: all 0.4s;
+    color: black;
+}
+
+@keyframes changecolor {
+    100% {
+        filter: hue-rotate(180deg);
+    }
+}
+
+.see-example-link:hover {
+    border-radius: 0 1.2rem;
+    animation-play-state: paused;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.main .about-us {
+    height: 100dvh;
+    background-image: linear-gradient(315deg, rgb(29, 69, 69) , rgb(72, 27, 27));
+    padding: 1.2rem;
+}
+
+.main .about-us .parent-p-img {
+    display: flex;
+    gap: 2rem;
+}
+
+.main .about-us .parent-p-img .paragraph-about-us::before {
+    content: "https://www.aparat.com/DA.KA_Programmer_2011";
+    background-color: rgba(179, 147, 147, 0.5);
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    /* transform: translateY(-50%); */
+    backdrop-filter: blur(4px);
+    z-index: 11;
+    transition: all 0.7s;
+}
+
+.main .about-us .parent-p-img .paragraph-about-us {
+    width: 60%;
+    background-image: linear-gradient(135deg,rgb(129, 110, 168),rgb(88, 74, 116));
+    padding: 1.5rem;
+    margin: 5.5rem 1rem;
+    line-height: 2.2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    border: 1px solid rgb(168, 199, 203);
+    text-align: justify;
+    position: relative;
+}
+
+.main .about-us .parent-p-img .paragraph-about-us::after {
+    content: "";
+    background-color: rgba(138, 181, 218, 0.361);
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    bottom: 100%;
+    backdrop-filter: blur(3px);
+    transition: all 0.7s;
+
+}
+
+
+.main .about-us .parent-p-img .paragraph-about-us:hover::before {
+    opacity: 1;
+    top: 50%;
+    pointer-events: auto;
+}
+
+.main .about-us .parent-p-img .paragraph-about-us:hover::after {
+    bottom: 0;
+    height: 100%;
+}
+
+@keyframes changecolor-first-letter {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.main .about-us .parent-p-img .paragraph-about-us span {
+    animation: changecolor-first-letter 4s infinite alternate;
+}
+
+
+.main .about-us .parent-p-img .paragraph-about-us::first-letter {
+    font-size: 3.2rem;
+    color: rgb(225, 229, 151);
+}
+
+
+
+.main .about-us .parent-p-img .dana-image {
+    width: 40%;
+    margin: 2rem;
+    border: 4px dashed lightblue;
+    border-radius: 10px;
+}
+
+.main .about-us .title-about-us {
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+.main .about-us .title-about-us::before {
+    content: "";
+    width: 40%;
+    height: 0.6rem;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, rgb(36, 117, 141), rgb(92, 139, 35));
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: 1rem;
+    animation: changecolor-place-1 3s infinite alternate;
+}
+
+.main .about-us .title-about-us::after {
+    content: "";
+    width: 40%;
+    height: 0.6rem;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg , rgb(92, 139, 35), rgb(36, 117, 141));
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 1rem;
+    animation: changecolor-place-2 3s infinite alternate;
+}
+
+@keyframes changecolor-place-1 {
+
+    100% {
+
+        transform: translateX(10px);
+    }
+
+}
+@keyframes changecolor-place-2 {
+
+    100% {
+        transform: translateX(-10px);
+    }
+
+}
+
+.main .sample {
+    height: 100dvh;
+    background-image: linear-gradient(225deg, rgb(29, 69, 69) , rgb(72, 27, 27));
+    padding: 1.2rem;
+}
+
+.main .sample .title-sample {
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 3rem;
+}
+
+.main .sample .title-sample::before {
+    content: "";
+    width: 40%;
+    height: 0.6rem;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, rgb(36, 117, 141), rgb(92, 139, 35));
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: 1rem;
+    animation: changecolor-place-1 3s infinite alternate;
+}
+
+.main .sample .title-sample::after {
+    content: "";
+    width: 40%;
+    height: 0.6rem;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg , rgb(92, 139, 35), rgb(36, 117, 141));
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 1rem;
+    animation: changecolor-place-2 3s infinite alternate;
+}
+
+.main .sample-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-inline: 2rem;
+}
+
+.main .sample-section .sample-article {
+    width: 100%;
+    position: relative;
+}
+
+.main .sample-section .sample-article img {
+    width: 100%;
+    border: 4px rgb(86, 141, 200);
+    border-style: dotted;
+    height: 100%;
+}
+
+.main .sample-section .sample-article::after {
+    content: attr(data-name);
+    background-color: rgba(98, 169, 72, 0.564);
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    bottom: 100%;
+    position: absolute;
+    transition: all 0.4s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.main .sample-section .sample-article:hover::after {
+    bottom: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+
+
+
+.main .knowledge .title-knowledge {
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 6.5rem;
+}
+
+.main .knowledge {
+    height: 100dvh;
+    background-image: linear-gradient(315deg, rgb(29, 69, 69) , rgb(72, 27, 27));
+    padding: 1.2rem;
+}
+
+.main .knowledge .container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.main .knowledge .title-knowledge::before {
+    content: "";
+    width: 39%;
+    height: 0.6rem;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, rgb(36, 117, 141), rgb(92, 139, 35));
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: 1rem;
+    animation: changecolor-place-1 3s infinite alternate;
+}
+
+.main .knowledge .title-knowledge::after {
+    content: "";
+    width: 39%;
+    height: 0.6rem;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg , rgb(92, 139, 35), rgb(36, 117, 141));
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 1rem;
+    animation: changecolor-place-2 3s infinite alternate;
+}
+
+
+.main .knowledge .container-knowledge .label-knowledge {
+    font-family: sans-serif;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+}  
+
+.main .knowledge .container-knowledge {
+    background-color: rgb(179, 220, 255);
+    text-align: center;
+    border-radius: 6px;
+    padding: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    border: 1px solid rgb(88, 156, 179);
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.4);
+}
+
+.main .knowledge .container-knowledge .navar-a {
+    width: 20rem;
+    background-color: aliceblue;
+    border-radius: 14px;
+    margin-top: 1rem;
+    position: relative;
+
+}
+
+.main .knowledge .container-knowledge .navar-b {
+    position: absolute;
+    background-color: rgba(255, 166, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    top: 0;
+}
